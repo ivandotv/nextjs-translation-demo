@@ -4,12 +4,24 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "debug": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "extract": "lingui extract",
+    "compile": "lingui compile"
   },
   "dependencies": {
+    "@lingui/react": "^3.2.3",
+    "make-plural": "^6.2.2",
     "next": "10.0.3",
+    "nookies": "^2.5.0",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@lingui/cli": "^3.2.3",
+    "@lingui/macro": "^3.2.3",
+    "@lingui/loader": "^3.2.3"
   }
 }
