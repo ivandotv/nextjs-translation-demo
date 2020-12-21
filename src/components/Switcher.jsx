@@ -8,10 +8,13 @@ export function Switcher() {
   const [locale, setLocale] = useState(router.locale.split('-')[0])
 
   const firstLang = 'First -Eng'
+  // const test = t`${firstLang}`
+  const test = t`English`
   const languages = {
-    en: t`${firstLang}`,
+    en: test,
     sr: t`Serbian`,
-    es: t`Spanish`
+    es: t`Spanish`,
+    pseudo: t`Pseudo`
   }
 
   const locales = Object.keys(languages)
@@ -20,6 +23,7 @@ export function Switcher() {
     router.push(router.pathname, router.pathname, { locale: locale })
   }, [locale])
 
+  console.log('s locale ', locale)
   return (
     <select value={locale} onChange={(evt) => setLocale(evt.target.value)}>
       {locales.map((locale) => {

@@ -1,0 +1,28 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2020-12-21 20:45+0100\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: zz-pseudo\n"
+
+#: src/components/Switcher.jsx:14
+msgid "Serbian"
+msgstr ""
+
+#: src/components/Switcher.jsx:15
+msgid "Spanish"
+msgstr ""
+
+#: src/pages/index.jsx:34
+msgid "Welcome to <0>Next.js!</0>"
+msgstr ""
+
+#: src/components/AboutText.jsx:5
+msgid "next-explanation"
+msgstr ""
+
+#: src/components/Switcher.jsx:11
+msgid "{firstLang}"
+msgstr ""

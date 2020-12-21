@@ -13,15 +13,19 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/temp.js:5
-#~ msgid "English"
-#~ msgstr "English"
+#: src/components/Switcher.jsx:12
+msgid "English"
+msgstr "English"
 
-#: src/components/Switcher.jsx:13
+#: src/components/Switcher.jsx:17
+msgid "Pseudo"
+msgstr "Pseudo"
+
+#: src/components/Switcher.jsx:15
 msgid "Serbian"
 msgstr "Serbian - "
 
-#: src/components/Switcher.jsx:14
+#: src/components/Switcher.jsx:16
 msgid "Spanish"
 msgstr "Spanish - "
 
@@ -37,6 +41,6 @@ msgstr "Next.js is an open-source React front-end development web framework that
 #~ msgid "{0}"
 #~ msgstr "{0}"
 
-#: src/components/Switcher.jsx:12
-msgid "{firstLang}"
-msgstr "{firstLang}"
+#: src/components/Switcher.jsx:11
+#~ msgid "{firstLang}"
+#~ msgstr "{firstLang}"

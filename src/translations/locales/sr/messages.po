@@ -13,15 +13,19 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/temp.js:5
-#~ msgid "English"
-#~ msgstr "Енглески"
+#: src/components/Switcher.jsx:12
+msgid "English"
+msgstr "Енглески"
 
-#: src/components/Switcher.jsx:13
+#: src/components/Switcher.jsx:17
+msgid "Pseudo"
+msgstr ""
+
+#: src/components/Switcher.jsx:15
 msgid "Serbian"
 msgstr "Српски"
 
-#: src/components/Switcher.jsx:14
+#: src/components/Switcher.jsx:16
 msgid "Spanish"
 msgstr "Шпански"
 
@@ -37,6 +41,6 @@ msgstr "Некст.јс је отворени изворни Реацт-ов р�
 #~ msgid "{0}"
 #~ msgstr ""
 
-#: src/components/Switcher.jsx:12
-msgid "{firstLang}"
-msgstr ""
+#: src/components/Switcher.jsx:11
+#~ msgid "{firstLang}"
+#~ msgstr ""

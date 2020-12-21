@@ -1,6 +1,6 @@
 module.exports = {
-  locales: ['en', 'sr', 'es'],
-  // pseudoLocale: 'zz-pseudo',
+  locales: ['en', 'sr', 'es', 'pseudo'],
+  pseudoLocale: 'pseudo',
   sourceLocale: 'en',
   fallbackLocales: {
     default: 'en'
@@ -11,7 +11,8 @@ module.exports = {
       include: ['src/pages', 'src/components']
     }
   ],
-  format: 'po',
+  format: 'po'
   // runtimeConfigModule: ['./src/initTranslations.js', 'i18nGlobal']
-  runtimeConfigModule: ['./src/initTranslations.js', 'i18n']
+  // runtimeConfigModule: ['./src/initTranslationss', 'i18n']
+  // runtimeConfigModule: ['@lingui/cores', 'i18n']
 }
