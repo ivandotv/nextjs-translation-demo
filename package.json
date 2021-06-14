@@ -7,8 +7,9 @@
     "debug": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
-    "extract": "lingui extract",
-    "compile": "lingui compile"
+    "lang:extract": "NODE_ENV=development lingui extract",
+    "lang:compile": "lingui compile",
+    "lang": "yarn lang:extract && yarn lang:compile"
   },
   "dependencies": {
     "@lingui/react": "^3.10.2",
