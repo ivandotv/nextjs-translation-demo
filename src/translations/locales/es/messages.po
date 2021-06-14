@@ -13,6 +13,10 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/pages/index.jsx:27
+#~ msgid "Create Next App"
+#~ msgstr ""
+
 #: src/components/Switcher.jsx:12
 msgid "English"
 msgstr "Inglés"
@@ -29,7 +33,11 @@ msgstr "Serbio"
 msgid "Spanish"
 msgstr "Español"
 
-#: src/pages/index.jsx:34
+#: src/pages/index.jsx:27
+msgid "Translation Demo"
+msgstr "Demostración de Traducción"
+
+#: src/pages/index.jsx:33
 msgid "Welcome to <0>Next.js!</0>"
 msgstr "Bienvenido a <0>Next.js!</0>"
 

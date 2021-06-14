@@ -1,35 +1,34 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { Trans } from '@lingui/macro'
+import { Trans, t } from '@lingui/macro'
 import { AboutText, Title } from '../components/AboutText'
 import { Switcher } from '../components/Switcher'
 import { useRouter } from 'next/router'
+import { loadTranslations } from '../utils'
 
 export async function getStaticProps(ctx) {
-  const { messages } = await import(
-    `@lingui/loader!../translations/locales/${ctx.locale}/messages.po`
+  const translation = await loadTranslations(
+    ctx.locale,
+    process.env.NODE_ENV === 'production'
   )
-
-  console.log('ctx locale', ctx.locale)
   return {
     props: {
-      translation: messages
+      translation
     }
   }
 }
 
 export default function Index() {
   const router = useRouter()
-  console.dir(router)
+  console.log('index')
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>{t`Translation Demo`}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        {router.pathname}
         <h1 className={styles.title}>
           <Trans>
             Welcome to <a href="https://nextjs.org">Next.js!</a>

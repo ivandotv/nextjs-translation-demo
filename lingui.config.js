@@ -12,7 +12,4 @@ module.exports = {
     }
   ],
   format: 'po'
-  // runtimeConfigModule: ['./src/initTranslations.js', 'i18nGlobal']
-  // runtimeConfigModule: ['./src/initTranslationss', 'i18n']
-  // runtimeConfigModule: ['@lingui/cores', 'i18n']
 }
