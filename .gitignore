@@ -32,4 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# lingui js
 /src/translations/**/*.js

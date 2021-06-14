@@ -1,10 +1,11 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Index.module.css'
 import { Trans, t } from '@lingui/macro'
 import { AboutText, Title } from '../components/AboutText'
 import { Switcher } from '../components/Switcher'
 import { useRouter } from 'next/router'
 import { loadTranslations } from '../utils'
+import Developers from '../components/Developers'
 
 export async function getStaticProps(ctx) {
   const translation = await loadTranslations(
@@ -29,6 +30,7 @@ export default function Index() {
       </Head>
 
       <main className={styles.main}>
+        <Switcher />
         <h1 className={styles.title}>
           <Trans>
             Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -37,7 +39,7 @@ export default function Index() {
         <div className={styles.description}>
           <AboutText />
         </div>
-        <Switcher></Switcher>
+        <Developers />
       </main>
     </div>
   )

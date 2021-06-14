@@ -17,27 +17,35 @@ msgstr ""
 #~ msgid "Create Next App"
 #~ msgstr "Create Next App"
 
-#: src/components/Switcher.jsx:12
+#: src/components/Switcher.jsx:10
 msgid "English"
 msgstr "English"
 
-#: src/components/Switcher.jsx:17
+#: src/components/Cars.tsx:10
+#~ msgid "How many cars?"
+#~ msgstr "How many cars?"
+
+#: src/components/Developers.tsx:9
+msgid "How many developers?"
+msgstr "How many developers?"
+
+#: src/components/Switcher.jsx:15
 msgid "Pseudo"
 msgstr "Pseudo"
 
-#: src/components/Switcher.jsx:15
+#: src/components/Switcher.jsx:13
 msgid "Serbian"
 msgstr "Serbian - "
 
-#: src/components/Switcher.jsx:16
+#: src/components/Switcher.jsx:14
 msgid "Spanish"
 msgstr "Spanish - "
 
-#: src/pages/index.jsx:27
+#: src/pages/index.jsx:28
 msgid "Translation Demo"
 msgstr "Translation Demo"
 
-#: src/pages/index.jsx:33
+#: src/pages/index.jsx:35
 msgid "Welcome to <0>Next.js!</0>"
 msgstr "Welcome to <0>Next.js!</0>"
 
@@ -52,3 +60,11 @@ msgstr "Next.js is an open-source React front-end development web framework that
 #: src/components/Switcher.jsx:11
 #~ msgid "{firstLang}"
 #~ msgstr "{firstLang}"
+
+#: src/components/Cars.tsx:21
+#~ msgid "{selected, plural, one {Car} other {Cars}}"
+#~ msgstr "{selected, plural, one {Car} other {Cars}}"
+
+#: src/components/Developers.tsx:20
+msgid "{selected, plural, one {Developer} other {Developers}}"
+msgstr "{selected, plural, one {Developer} other {Developers}}"

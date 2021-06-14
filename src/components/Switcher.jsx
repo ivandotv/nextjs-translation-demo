@@ -7,8 +7,6 @@ export function Switcher() {
   const router = useRouter()
   const [locale, setLocale] = useState(router.locale.split('-')[0])
 
-  const firstLang = 'First -Eng'
-  // const test = t`${firstLang}`
   const test = t`English`
   const languages = {
     en: test,
