@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "debug": "NODE_OPTIONS='--inspect' next dev",
-    "build": "next build",
+    "build": "yarn lang && next build",
     "start": "next start",
     "lang:extract": "NODE_ENV=development lingui extract",
     "lang:compile": "lingui compile",
