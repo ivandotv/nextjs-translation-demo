@@ -21,7 +21,6 @@ export function Switcher() {
     router.push(router.pathname, router.pathname, { locale: locale })
   }, [locale])
 
-  console.log('s locale ', locale)
   return (
     <select value={locale} onChange={(evt) => setLocale(evt.target.value)}>
       {locales.map((locale) => {

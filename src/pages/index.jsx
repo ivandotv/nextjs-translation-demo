@@ -21,7 +21,7 @@ export async function getStaticProps(ctx) {
 
 export default function Index() {
   const router = useRouter()
-  console.log('index')
+
   return (
     <div className={styles.container}>
       <Head>
