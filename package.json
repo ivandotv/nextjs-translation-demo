@@ -9,7 +9,8 @@
     "start": "next start",
     "lang:extract": "NODE_ENV=development lingui extract",
     "lang:compile": "lingui compile",
-    "lang": "yarn lang:extract && yarn lang:compile"
+    "lang": "yarn lang:extract && yarn lang:compile",
+    "test": "yarn build"
   },
   "dependencies": {
     "@lingui/react": "^3.10.2",
