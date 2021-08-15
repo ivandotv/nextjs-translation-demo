@@ -23,7 +23,7 @@ msgstr "Тест за Множину: Колико програмера?"
 
 #: src/components/Switcher.jsx:15
 msgid "Pseudo"
-msgstr ""
+msgstr "Псеудо"
 
 #: src/components/Switcher.jsx:13
 msgid "Serbian"

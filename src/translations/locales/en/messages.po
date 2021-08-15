@@ -27,11 +27,11 @@ msgstr "Pseudo"
 
 #: src/components/Switcher.jsx:13
 msgid "Serbian"
-msgstr "Serbian - "
+msgstr "Serbian"
 
 #: src/components/Switcher.jsx:14
 msgid "Spanish"
-msgstr "Spanish - "
+msgstr "Spanish"
 
 #: src/pages/index.jsx:28
 msgid "Translation Demo"
