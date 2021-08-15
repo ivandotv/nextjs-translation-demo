@@ -6,7 +6,7 @@ export default function Developers() {
   return (
     <div>
       <p>
-        <Trans>How many developers?</Trans>
+        <Trans>Plural Test: How many developers?</Trans>
       </p>
       <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
         <select

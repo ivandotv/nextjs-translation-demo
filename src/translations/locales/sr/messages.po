@@ -13,21 +13,13 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/pages/index.jsx:27
-#~ msgid "Create Next App"
-#~ msgstr ""
-
 #: src/components/Switcher.jsx:10
 msgid "English"
 msgstr "Енглески"
 
-#: src/components/Cars.tsx:10
-#~ msgid "How many cars?"
-#~ msgstr ""
-
 #: src/components/Developers.tsx:9
-msgid "How many developers?"
-msgstr "Колико програмера"
+msgid "Plural Test: How many developers?"
+msgstr "Тест за Множину: Колико програмера?"
 
 #: src/components/Switcher.jsx:15
 msgid "Pseudo"
@@ -52,10 +44,6 @@ msgstr "Добродошли у <0>Нект.јс!</0>"
 #: src/components/AboutText.jsx:5
 msgid "next-explanation"
 msgstr "Некст.јс је отворени изворни Реацт-ов развојни вебоквир који омогућава функционалност као што је приказивање на страни сервера и генерисање статичких веблокација за веб апликације засноване на Реацт-у."
-
-#: src/components/Cars.tsx:21
-#~ msgid "{selected, plural, one {Car} other {Cars}}"
-#~ msgstr "{selected, plural, one {Kola} other {Kolasss}}"
 
 #: src/components/Developers.tsx:20
 msgid "{selected, plural, one {Developer} other {Developers}}"

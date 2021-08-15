@@ -7,7 +7,7 @@
     "debug": "NODE_OPTIONS='--inspect' next dev",
     "build": "yarn lang && next build",
     "start": "next start",
-    "lang:extract": "NODE_ENV=development lingui extract",
+    "lang:extract": "NODE_ENV=development lingui extract --clean",
     "lang:compile": "lingui compile",
     "lang": "yarn lang:extract && yarn lang:compile",
     "test": "yarn build"

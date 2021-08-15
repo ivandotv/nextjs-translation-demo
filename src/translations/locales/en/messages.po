@@ -13,21 +13,13 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/pages/index.jsx:27
-#~ msgid "Create Next App"
-#~ msgstr "Create Next App"
-
 #: src/components/Switcher.jsx:10
 msgid "English"
 msgstr "English"
 
-#: src/components/Cars.tsx:10
-#~ msgid "How many cars?"
-#~ msgstr "How many cars?"
-
 #: src/components/Developers.tsx:9
-msgid "How many developers?"
-msgstr "How many developers?"
+msgid "Plural Test: How many developers?"
+msgstr "Plural Test: How many developers?"
 
 #: src/components/Switcher.jsx:15
 msgid "Pseudo"
@@ -52,18 +44,6 @@ msgstr "Welcome to <0>Next.js!</0>"
 #: src/components/AboutText.jsx:5
 msgid "next-explanation"
 msgstr "Next.js is an open-source React front-end development web framework that enables functionality such as server-side rendering and generating static websites for React based web applications. It is a production-ready framework that allows developers to quickly create static and dynamic JAMstack websites and is used widely by many large companies."
-
-#: src/components/temp.js:19
-#~ msgid "{0}"
-#~ msgstr "{0}"
-
-#: src/components/Switcher.jsx:11
-#~ msgid "{firstLang}"
-#~ msgstr "{firstLang}"
-
-#: src/components/Cars.tsx:21
-#~ msgid "{selected, plural, one {Car} other {Cars}}"
-#~ msgstr "{selected, plural, one {Car} other {Cars}}"
 
 #: src/components/Developers.tsx:20
 msgid "{selected, plural, one {Developer} other {Developers}}"
