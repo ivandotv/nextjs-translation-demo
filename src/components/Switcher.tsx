@@ -17,10 +17,8 @@ export function Switcher() {
     pseudo: t`Pseudo`
   }
 
-  const locales = Object.keys(languages) as unknown as LOCALES[]
-
   useEffect(() => {
-    router.push(router.pathname, router.pathname, { locale: locale })
+    router.push(router.pathname, router.pathname, { locale })
   }, [locale, router])
 
   return (
@@ -28,10 +26,10 @@ export function Switcher() {
       value={locale}
       onChange={(evt) => setLocale(evt.target.value as LOCALES)}
     >
-      {locales.map((locale) => {
+      {Object.keys(languages).map((locale) => {
         return (
           <option value={locale} key={locale}>
-            {languages[locale]}
+            {languages[locale as unknown as LOCALES]}
           </option>
         )
       })}
