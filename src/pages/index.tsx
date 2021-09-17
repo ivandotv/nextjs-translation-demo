@@ -1,15 +1,15 @@
+import { t, Trans } from '@lingui/macro'
+import { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
-import styles from '../styles/Index.module.css'
-import { Trans, t } from '@lingui/macro'
-import { AboutText, Title } from '../components/AboutText'
-import { Switcher } from '../components/Switcher'
-import { useRouter } from 'next/router'
-import { loadTranslations } from '../utils'
+import { AboutText } from '../components/AboutText'
 import Developers from '../components/Developers'
+import { Switcher } from '../components/Switcher'
+import styles from '../styles/Index.module.css'
+import { loadTranslations } from '../utils'
 
-export async function getStaticProps(ctx) {
+export const getStaticProps: GetStaticProps = async (ctx) => {
   const translation = await loadTranslations(
-    ctx.locale,
+    ctx.locale!,
     process.env.NODE_ENV === 'production'
   )
   return {
@@ -19,9 +19,7 @@ export async function getStaticProps(ctx) {
   }
 }
 
-export default function Index() {
-  const router = useRouter()
-
+const Index: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -44,3 +42,5 @@ export default function Index() {
     </div>
   )
 }
+
+export default Index

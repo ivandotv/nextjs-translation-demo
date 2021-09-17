@@ -1,4 +1,5 @@
 import { Trans } from '@lingui/macro'
+
 export function AboutText() {
   return (
     <p>

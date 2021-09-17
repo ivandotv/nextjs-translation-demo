@@ -1,28 +1,33 @@
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 import { t } from '@lingui/macro'
-// import { i18nGlobal } from '../initTranslations'
+
+type LOCALES = 'en' | 'sr' | 'es' | 'pseudo'
 
 export function Switcher() {
   const router = useRouter()
-  const [locale, setLocale] = useState(router.locale.split('-')[0])
+  const [locale, setLocale] = useState<LOCALES>(
+    router.locale!.split('-')[0] as LOCALES
+  )
 
-  const test = t`English`
   const languages = {
-    en: test,
+    en: t`English`,
     sr: t`Serbian`,
     es: t`Spanish`,
     pseudo: t`Pseudo`
   }
 
-  const locales = Object.keys(languages)
+  const locales = Object.keys(languages) as unknown as LOCALES[]
 
   useEffect(() => {
     router.push(router.pathname, router.pathname, { locale: locale })
-  }, [locale])
+  }, [locale, router])
 
   return (
-    <select value={locale} onChange={(evt) => setLocale(evt.target.value)}>
+    <select
+      value={locale}
+      onChange={(evt) => setLocale(evt.target.value as LOCALES)}
+    >
       {locales.map((locale) => {
         return (
           <option value={locale} key={locale}>
