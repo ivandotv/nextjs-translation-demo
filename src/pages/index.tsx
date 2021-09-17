@@ -5,10 +5,10 @@ import { AboutText } from '../components/AboutText'
 import Developers from '../components/Developers'
 import { Switcher } from '../components/Switcher'
 import styles from '../styles/Index.module.css'
-import { loadTranslations } from '../utils'
+import { loadTranslation } from '../utils'
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-  const translation = await loadTranslations(
+  const translation = await loadTranslation(
     ctx.locale!,
     process.env.NODE_ENV === 'production'
   )

@@ -10,7 +10,7 @@ export function initTranslation(i18n: I18n): void {
   })
 }
 
-export async function loadTranslations(locale: string, isProduction = true) {
+export async function loadTranslation(locale: string, isProduction = true) {
   let data
   if (isProduction) {
     data = await import(`./translations/locales/${locale}/messages`)
