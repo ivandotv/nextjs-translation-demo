@@ -10,12 +10,16 @@ export function Switcher() {
     router.locale!.split('-')[0] as LOCALES
   )
 
-  const languages = {
+  const languages: { [key: string]: string } = {
     en: t`English`,
     sr: t`Serbian`,
-    es: t`Spanish`,
-    pseudo: t`Pseudo`
+    es: t`Spanish`
   }
+
+  // disabled for DEMO - so we can demonstrate the 'pseudo' locale functionality
+  // if (process.env.NEXT_PUBLIC_NODE_ENV !== 'production') {
+  //   languages['pseudo'] = t`Pseudo`
+  // }
 
   useEffect(() => {
     if (router.locale !== locale) {
