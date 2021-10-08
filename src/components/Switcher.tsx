@@ -18,8 +18,10 @@ export function Switcher() {
   }
 
   useEffect(() => {
-    router.push(router.pathname, router.pathname, { locale })
-  }, [locale, router])
+    if (router.locale !== locale) {
+      router.push(router.pathname, router.pathname, { locale })
+    }
+  }, [router, locale])
 
   return (
     <select
