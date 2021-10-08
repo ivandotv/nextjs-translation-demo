@@ -13,18 +13,18 @@
     "test": "yarn build"
   },
   "dependencies": {
-    "@lingui/react": "^3.11.1",
+    "@lingui/react": "^3.12.1",
     "make-plural": "^7.0.0",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.5",
-    "@lingui/cli": "^3.11.1",
-    "@lingui/loader": "^3.11.1",
-    "@lingui/macro": "^3.11.1",
-    "@types/react": "^17.0.21",
+    "@babel/core": "^7.15.8",
+    "@lingui/cli": "^3.12.1",
+    "@lingui/loader": "^3.12.1",
+    "@lingui/macro": "^3.12.1",
+    "@types/react": "^17.0.27",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
     "typescript": "^4.4.3"
