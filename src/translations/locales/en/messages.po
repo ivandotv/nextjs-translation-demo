@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/Switcher.jsx:10
+#: src/components/Switcher.tsx:14
 msgid "English"
 msgstr "English"
 
@@ -21,27 +21,23 @@ msgstr "English"
 msgid "Plural Test: How many developers?"
 msgstr "Plural Test: How many developers?"
 
-#: src/components/Switcher.jsx:15
-msgid "Pseudo"
-msgstr "Pseudo"
-
-#: src/components/Switcher.jsx:13
+#: src/components/Switcher.tsx:15
 msgid "Serbian"
 msgstr "Serbian"
 
-#: src/components/Switcher.jsx:14
+#: src/components/Switcher.tsx:16
 msgid "Spanish"
 msgstr "Spanish"
 
-#: src/pages/index.jsx:28
+#: src/pages/index.tsx:26
 msgid "Translation Demo"
 msgstr "Translation Demo"
 
-#: src/pages/index.jsx:35
+#: src/pages/index.tsx:33
 msgid "Welcome to <0>Next.js!</0>"
 msgstr "Welcome to <0>Next.js!</0>"
 
-#: src/components/AboutText.jsx:5
+#: src/components/AboutText.tsx:6
 msgid "next-explanation"
 msgstr "Next.js is an open-source React front-end development web framework that enables functionality such as server-side rendering and generating static websites for React based web applications. It is a production-ready framework that allows developers to quickly create static and dynamic JAMstack websites and is used widely by many large companies."
 

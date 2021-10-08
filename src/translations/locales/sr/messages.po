@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/Switcher.jsx:10
+#: src/components/Switcher.tsx:14
 msgid "English"
 msgstr "Енглески"
 
@@ -21,27 +21,23 @@ msgstr "Енглески"
 msgid "Plural Test: How many developers?"
 msgstr "Тест за Множину: Колико програмера?"
 
-#: src/components/Switcher.jsx:15
-msgid "Pseudo"
-msgstr "Псеудо"
-
-#: src/components/Switcher.jsx:13
+#: src/components/Switcher.tsx:15
 msgid "Serbian"
 msgstr "Српски"
 
-#: src/components/Switcher.jsx:14
+#: src/components/Switcher.tsx:16
 msgid "Spanish"
 msgstr "Шпански"
 
-#: src/pages/index.jsx:28
+#: src/pages/index.tsx:26
 msgid "Translation Demo"
 msgstr "Демо Превод"
 
-#: src/pages/index.jsx:35
+#: src/pages/index.tsx:33
 msgid "Welcome to <0>Next.js!</0>"
 msgstr "Добродошли у <0>Нект.јс!</0>"
 
-#: src/components/AboutText.jsx:5
+#: src/components/AboutText.tsx:6
 msgid "next-explanation"
 msgstr "Некст.јс је отворени изворни Реацт-ов развојни вебоквир који омогућава функционалност као што је приказивање на страни сервера и генерисање статичких веблокација за веб апликације засноване на Реацт-у."
 
