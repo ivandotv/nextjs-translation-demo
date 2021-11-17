@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { t } from '@lingui/macro'
 
 type LOCALES = 'en' | 'sr' | 'es' | 'pseudo'
@@ -21,17 +21,15 @@ export function Switcher() {
   //   languages['pseudo'] = t`Pseudo`
   // }
 
-  useEffect(() => {
-    if (router.locale !== locale) {
-      router.push(router.pathname, router.pathname, { locale })
-    }
-  }, [router, locale])
+  function handleChange(event: React.ChangeEvent<HTMLSelectElement>) {
+    const locale = event.target.value as LOCALES
+
+    setLocale(locale)
+    router.push(router.pathname, router.pathname, { locale })
+  }
 
   return (
-    <select
-      value={locale}
-      onChange={(evt) => setLocale(evt.target.value as LOCALES)}
-    >
+    <select value={locale} onChange={handleChange}>
       {Object.keys(languages).map((locale) => {
         return (
           <option value={locale} key={locale}>
