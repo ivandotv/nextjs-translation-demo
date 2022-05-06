@@ -13,20 +13,20 @@
     "test": "yarn build"
   },
   "dependencies": {
-    "@lingui/react": "^3.12.1",
-    "make-plural": "^7.0.0",
-    "next": "12.0.7",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "@lingui/react": "^3.13.3",
+    "make-plural": "^7.1.0",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@lingui/cli": "^3.12.1",
-    "@lingui/loader": "^3.12.1",
-    "@lingui/macro": "^3.12.1",
-    "@types/react": "^17.0.34",
-    "eslint": "7.32.0",
-    "eslint-config-next": "12.0.7",
-    "typescript": "^4.4.4"
+    "@babel/core": "^7.17.10",
+    "@lingui/cli": "^3.13.3",
+    "@lingui/loader": "^3.13.3",
+    "@lingui/macro": "^3.13.3",
+    "@types/react": "^18.0.8",
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.6",
+    "typescript": "^4.6.4"
   }
 }
