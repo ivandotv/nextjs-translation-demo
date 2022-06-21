@@ -39,6 +39,12 @@ const Index: NextPage = () => {
         </div>
         <Developers />
       </main>
+
+      <p>
+        <a href="https://github.com/ivandotv/nextjs-translation-demo">
+          https://github.com/ivandotv/nextjs-translation-demo
+        </a>
+      </p>
     </div>
   )
 }
