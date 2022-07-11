@@ -15,7 +15,7 @@
   "dependencies": {
     "@lingui/react": "^3.13.3",
     "make-plural": "^7.1.0",
-    "next": "12.2.0",
+    "next": "12.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
