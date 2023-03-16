@@ -4,10 +4,9 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useEffect, useRef } from 'react'
 import '../styles/globals.css'
-import { initTranslation } from '../utils'
 import type { AppProps } from 'next/app'
+import { activateLocale } from '../utils';
 
-initTranslation(i18n)
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -16,15 +15,13 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   // run only once on the first render (for server side)
   if (pageProps.translation && firstRender.current) {
-    i18n.load(locale, pageProps.translation)
-    i18n.activate(locale)
+    activateLocale(i18n, locale, pageProps.translation)
     firstRender.current = false
   }
 
   useEffect(() => {
     if (pageProps.translation) {
-      i18n.load(locale, pageProps.translation)
-      i18n.activate(locale)
+      activateLocale(i18n, locale, pageProps.translation)
     }
   }, [locale, pageProps.translation])
 

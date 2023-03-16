@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2020-12-21 21:28+0100\n"
+"POT-Creation-Date: 2020-12-04 23:19+0100\n"
 "Mime-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
-"Language: pseudo\n"
+"Language: en\n"
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: \n"
@@ -15,32 +15,32 @@ msgstr ""
 
 #: src/components/Switcher.tsx:14
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: src/components/Developers.tsx:9
 msgid "Plural Test: How many developers?"
-msgstr ""
+msgstr "Plural Test: How many developers?"
 
 #: src/components/Switcher.tsx:15
 msgid "Serbian"
-msgstr ""
+msgstr "Serbian"
 
 #: src/components/Switcher.tsx:16
 msgid "Spanish"
-msgstr ""
+msgstr "Spanish"
 
-#: src/pages/index.tsx:26
+#: src/pages/index.tsx:25
 msgid "Translation Demo"
-msgstr ""
+msgstr "Translation Demo"
 
-#: src/pages/index.tsx:33
+#: src/pages/index.tsx:32
 msgid "Welcome to <0>Next.js!</0>"
-msgstr ""
+msgstr "Welcome to <0>Next.js!</0>"
 
 #: src/components/AboutText.tsx:6
 msgid "next-explanation"
-msgstr ""
+msgstr "Next.js is an open-source React front-end development web framework that enables functionality such as server-side rendering and generating static websites for React based web applications. It is a production-ready framework that allows developers to quickly create static and dynamic JAMstack websites and is used widely by many large companies."
 
 #: src/components/Developers.tsx:20
 msgid "{selected, plural, one {Developer} other {Developers}}"
-msgstr ""
+msgstr "{selected, plural, one {Developer} other {Developers}}"

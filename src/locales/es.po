@@ -29,11 +29,11 @@ msgstr "Serbio"
 msgid "Spanish"
 msgstr "Español"
 
-#: src/pages/index.tsx:26
+#: src/pages/index.tsx:25
 msgid "Translation Demo"
 msgstr "Demostración de Traducción"
 
-#: src/pages/index.tsx:33
+#: src/pages/index.tsx:32
 msgid "Welcome to <0>Next.js!</0>"
 msgstr "Bienvenido a <0>Next.js!</0>"
 
