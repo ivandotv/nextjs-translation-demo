@@ -37,6 +37,7 @@ msgstr "Demostración de Traducción"
 msgid "Welcome to <0>Next.js!</0>"
 msgstr "Bienvenido a <0>Next.js!</0>"
 
+#. js-lingui-explicit-id
 #: src/components/AboutText.tsx:6
 msgid "next-explanation"
 msgstr "Next.js es un marco de trabajo web de desarrollo front-end de React de código abierto que permite funciones como la representación del lado del servidor y la generación de sitios web estáticos para aplicaciones web basadas en React. Es un marco listo para producción que permite a los desarrolladores crear rápidamente sitios web JAMstack estáticos y dinámicos y es ampliamente utilizado por muchas grandes empresas."
