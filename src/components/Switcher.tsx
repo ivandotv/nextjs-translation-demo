@@ -1,25 +1,34 @@
 import { useRouter } from 'next/router'
-import { useState } from 'react'
-import { t } from '@lingui/macro'
+import { useState } from 'react';
+import { msg } from '@lingui/macro';
+import { MessageDescriptor } from '@lingui/core'
+import { useLingui } from '@lingui/react';
 
 type LOCALES = 'en' | 'sr' | 'es' | 'pseudo'
 
+/**
+ * Example usage of Lazy Translations
+ * https://lingui.dev/tutorials/react-patterns#lazy-translations
+ *
+ */
+const languages: { [key: string]: MessageDescriptor } = {
+  en: msg`English`,
+  sr: msg`Serbian`,
+  es: msg`Spanish`
+}
+
+// disabled for DEMO - so we can demonstrate the 'pseudo' locale functionality
+// if (process.env.NEXT_PUBLIC_NODE_ENV !== 'production') {
+//   languages['pseudo'] = msg`Pseudo`
+// }
+
 export function Switcher() {
   const router = useRouter()
+  const { i18n } = useLingui()
+
   const [locale, setLocale] = useState<LOCALES>(
     router.locale!.split('-')[0] as LOCALES
   )
-
-  const languages: { [key: string]: string } = {
-    en: t`English`,
-    sr: t`Serbian`,
-    es: t`Spanish`
-  }
-
-  // disabled for DEMO - so we can demonstrate the 'pseudo' locale functionality
-  // if (process.env.NEXT_PUBLIC_NODE_ENV !== 'production') {
-  //   languages['pseudo'] = t`Pseudo`
-  // }
 
   function handleChange(event: React.ChangeEvent<HTMLSelectElement>) {
     const locale = event.target.value as LOCALES
@@ -33,10 +42,11 @@ export function Switcher() {
       {Object.keys(languages).map((locale) => {
         return (
           <option value={locale} key={locale}>
-            {languages[locale as unknown as LOCALES]}
+            {i18n._(languages[locale as unknown as LOCALES])}
           </option>
-        )
+        );
       })}
     </select>
   )
 }
+

@@ -29,6 +29,7 @@ msgstr ""
 msgid "Spanish"
 msgstr ""
 
+#. js-lingui-explicit-id
 #: src/pages/index.tsx:25
 msgid "Translation Demo"
 msgstr ""
